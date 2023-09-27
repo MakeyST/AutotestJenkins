@@ -1,0 +1,14 @@
+<settings>
+    <proxies>
+        <proxy>
+            <id>example-proxy</id>
+            <active>true</active>
+            <protocol>https</protocol>
+            <host>89.109.50.247</host>
+            <port>00000</port>
+            <!-- Если для прокси-сервера требуется аутентификация, добавьте следующие строки -->
+            <!--<username>your.username</username>-->
+            <!--<password>your.password</password>-->
+        </proxy>
+    </proxies>
+</settings>
