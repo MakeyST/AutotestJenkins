@@ -25,10 +25,11 @@ public class WindowProfilePage extends BasePage {
     public void Open(String xpath){
         driver.findElement(By.xpath(xpath)).click();
     }
-    public void inputText(String xpath, String text){
+    public void inputText(String xpath, String text) throws InterruptedException {
         WebElement inputField = driver.findElement(By.xpath(xpath));
         inputField.clear();
         inputField.sendKeys(text);
+        Thread.sleep(10);
     }
     public void checkElements(String xpath){
         try {
