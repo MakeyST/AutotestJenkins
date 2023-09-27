@@ -29,7 +29,6 @@ public class WindowProfilePage extends BasePage {
         WebElement inputField = driver.findElement(By.xpath(xpath));
         inputField.clear();
         inputField.sendKeys(text);
-        Thread.sleep(10);
     }
     public void checkElements(String xpath){
         try {
