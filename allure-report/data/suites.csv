@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Mon Sep 11 17:18:37 EEST 2023","Mon Sep 11 17:18:37 EEST 2023","1","Default Suite","Begins","tests.pageCrash.PageCrashTest","tests.pageCrash.PageCrashTest","clearCookiesAndLocalStorage","clearCookiesAndLocalStorage",""
+"passed","Thu Sep 14 11:29:46 EEST 2023","Thu Sep 14 11:30:05 EEST 2023","19216","Default Suite","Begins","tests.pageCrash.PlayCrashTest","tests.pageCrash.PlayCrashTest","checkButtomPlayCrash","checkButtomPlayCrash",""
+"broken","Wed Sep 13 16:41:49 EEST 2023","Wed Sep 13 16:41:49 EEST 2023","1","Default Suite","Begins","tests.pageCrash.PlayCrashTest","tests.pageCrash.PlayCrashTest","close","close",""
+"broken","Wed Sep 13 21:23:26 EEST 2023","Wed Sep 13 21:23:26 EEST 2023","2","Default Suite","Begins","tests.pageCrash.PlayCrashTest","tests.pageCrash.PlayCrashTest","clearCookiesAndLocalStorage","clearCookiesAndLocalStorage",""
+"passed","Wed Sep 13 16:32:01 EEST 2023","Wed Sep 13 16:32:06 EEST 2023","4872","Default Suite","Begins","tests.Autorisation.AutorisationTest","tests.Autorisation.AutorisationTest","checkRedirectAfterAutorisation","checkRedirectAfterAutorisation",""
+"passed","Mon Sep 11 18:15:46 EEST 2023","Mon Sep 11 18:15:53 EEST 2023","6919","Default Suite","Begins","tests.pageCrash.PageCrashTest","tests.pageCrash.PageCrashTest","checkIsRedirectToPageCrash","checkIsRedirectToPageCrash",""
