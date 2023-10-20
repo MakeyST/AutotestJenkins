@@ -26,6 +26,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.*;
 
+import java.net.MalformedURLException;
 import java.time.Duration;
 
 import static common.Config.CLEAR_COOKIES_AND_STORAGE;
@@ -72,9 +73,8 @@ public class BaseTest {
     protected FunctionsRoullet FunctionsRoullet = new FunctionsRoullet(driver);
     protected FunctionsDomains FunctionsDomains = new FunctionsDomains(driver);
 
-
-
-
+    public BaseTest() throws MalformedURLException {
+    }
 
 
     @BeforeTest
