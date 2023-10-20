@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="tests.Pages.Bonuses.BonusesTest">
+        <methods>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="checkBonuses"/>
+        </methods>
+      </class> <!-- tests.Pages.Bonuses.BonusesTest -->
+      <class name="tests.Pages.Bonuses.PageBonusesTest">
+        <methods>
+          <include name="checkIsRedirectingToPageBonuses"/>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+        </methods>
+      </class> <!-- tests.Pages.Bonuses.PageBonusesTest -->
+      <class name="tests.Pages.PageCoin.PageCoinTest">
+        <methods>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="checkIsRedirectToPageCoin"/>
+        </methods>
+      </class> <!-- tests.Pages.PageCoin.PageCoinTest -->
+      <class name="tests.Pages.Payments.ReplenishmentTest">
+        <methods>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="checkWindowReplenishment"/>
+        </methods>
+      </class> <!-- tests.Pages.Payments.ReplenishmentTest -->
+      <class name="tests.base.basetests.BaseTest">
+        <methods>
+          <include name="clearCookiesAndLocalStorage"/>
+        </methods>
+      </class> <!-- tests.base.basetests.BaseTest -->
+      <class name="tests.Pages.pageMiner.PlayTheGameMinerTest">
+        <methods>
+          <include name="checkPlayMiner"/>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+        </methods>
+      </class> <!-- tests.Pages.pageMiner.PlayTheGameMinerTest -->
+      <class name="tests.Pages.Profile.SettingsTest">
+        <methods>
+          <include name="Settings"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.Pages.Profile.SettingsTest -->
+      <class name="tests.Pages.PageCoin.LoginAndPlayCoinTest">
+        <methods>
+          <include name="checkPlayCoin"/>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+        </methods>
+      </class> <!-- tests.Pages.PageCoin.LoginAndPlayCoinTest -->
+      <class name="tests.Pages.pageMiner.PageMinerTest">
+        <methods>
+          <include name="checkIsRedirectToPageMiner"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.Pages.pageMiner.PageMinerTest -->
+      <class name="tests.Pages.Profile.HistoryTest">
+        <methods>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="Profile"/>
+        </methods>
+      </class> <!-- tests.Pages.Profile.HistoryTest -->
+      <class name="tests.Pages.Autorisation.AutorisationTest">
+        <methods>
+          <include name="checkRedirectAfterAutorisation"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.Pages.Autorisation.AutorisationTest -->
+      <class name="tests.Pages.pageCases.PlayCasesTest">
+        <methods>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="checkPlayCases"/>
+        </methods>
+      </class> <!-- tests.Pages.pageCases.PlayCasesTest -->
+      <class name="tests.Pages.PageAsteroid.PageAsteroidTest">
+        <methods>
+          <include name="checkIsRedirectingToPageAsteroid"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.Pages.PageAsteroid.PageAsteroidTest -->
+      <class name="tests.Pages.PageAsteroid.LoginAndTrytoPlayAsteroidTest">
+        <methods>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+          <include name="checkButtonPlayAsteroid"/>
+        </methods>
+      </class> <!-- tests.Pages.PageAsteroid.LoginAndTrytoPlayAsteroidTest -->
+      <class name="tests.Pages.pageCases.BarCasesTest">
+        <methods>
+          <include name="checkPlayCases"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.Pages.pageCases.BarCasesTest -->
+      <class name="tests.APITest.APIRegistrationTest">
+        <methods>
+          <include name="successRegTest"/>
+        </methods>
+      </class> <!-- tests.APITest.APIRegistrationTest -->
+      <class name="tests.Pages.pageCrash.LoginAndTrytoPlayCrashTest">
+        <methods>
+          <include name="checkButtomPlayCrash"/>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+        </methods>
+      </class> <!-- tests.Pages.pageCrash.LoginAndTrytoPlayCrashTest -->
+      <class name="tests.Pages.pageCases.PageCasesTest">
+        <methods>
+          <include name="checkIsRedirectToPageCases"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.Pages.pageCases.PageCasesTest -->
+      <class name="tests.Pages.Casino.CasinoTest">
+        <methods>
+          <include name="CasinoPlay"/>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+        </methods>
+      </class> <!-- tests.Pages.Casino.CasinoTest -->
+      <class name="tests.Pages.Registration.RegistrationTest">
+        <methods>
+          <include name="checkRedirectAfterRegistration"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.Pages.Registration.RegistrationTest -->
+      <class name="tests.Pages.Profile.ProfileTest">
+        <methods>
+          <include name="Profile"/>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+        </methods>
+      </class> <!-- tests.Pages.Profile.ProfileTest -->
+      <class name="tests.Pages.BetsTest.BetTest">
+        <methods>
+          <include name="checkToMakeABet"/>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+        </methods>
+      </class> <!-- tests.Pages.BetsTest.BetTest -->
+      <class name="tests.Pages.BetsTest.PageTest">
+        <methods>
+          <include name="close"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="checkIsRedirectToPageBets"/>
+        </methods>
+      </class> <!-- tests.Pages.BetsTest.PageTest -->
+      <class name="tests.Pages.pageMiner.LoginAndTrytoPlayMinerTest">
+        <methods>
+          <include name="checkButtonPlayMiner"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.Pages.pageMiner.LoginAndTrytoPlayMinerTest -->
+      <class name="tests.Pages.pageCrash.PageCrashTest">
+        <methods>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="close"/>
+          <include name="checkIsRedirectToPageCrash"/>
+        </methods>
+      </class> <!-- tests.Pages.pageCrash.PageCrashTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE  suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Авторизация">
+        <groups>
+            <run>
+                <include name="autorisation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.Pages.Autorisation.AutorisationTest"/>
+        </classes>
+    </test>
+    <test name="Бонусы">
+        <groups>
+            <run>
+                <include name="bonuses"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.Pages.Bonuses.PageBonusesTest"/>
+            <class name="tests.Pages.Bonuses.BonusesTest"/>
+        </classes>
+    </test>
+</suite>

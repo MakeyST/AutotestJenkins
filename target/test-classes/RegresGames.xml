@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE  suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!--Проверка авторизации-->
+    <test name="Авторизация">
+        <groups>
+            <run>
+                <include name="autorisation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.Pages.Autorisation.AutorisationTest"/>
+        </classes>
+    </test>
+    <!-- Проверка игры Минер-->
+    <test name="Минер">
+        <groups>
+            <run>
+                <include name="miner"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.Pages.pageMiner.PageMinerTest"/>
+            <class name="tests.Pages.pageMiner.PlayTheGameMinerTest" />
+        </classes>
+    </test>
+    <!--Проверка игры Краш-->
+    <test name="Краш">
+        <groups>
+            <run>
+                <include name="crash"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.Pages.pageCrash.PageCrashTest" />
+            <class name="tests.Pages.pageCrash.LoginAndTrytoPlayCrashTest" />
+        </classes>
+    </test>
+    <!--Проверка игры Монетка-->
+    <test name="Монетка">
+        <groups>
+            <run>
+                <include name="coin"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.Pages.PageCoin.PageCoinTest" />
+            <class name="tests.Pages.PageCoin.LoginAndPlayCoinTest" />
+        </classes>
+    </test>
+    <!--Проверка игры Астероид-->
+    <test name="Астероид">
+        <groups>
+            <run>
+                <include name="asteroid"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.Pages.PageAsteroid.PageAsteroidTest" />
+            <class name="tests.Pages.PageAsteroid.LoginAndTrytoPlayAsteroidTest" />
+        </classes>
+    </test>
+    <!-- Проверка игры Кейсы-->
+    <test name="Кейсы">
+        <groups>
+            <run>
+                <include name="cases"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.Pages.pageCases.PageCasesTest" />
+            <class name="tests.Pages.pageCases.BarCasesTest" />
+            <class name="tests.Pages.pageCases.PlayCasesTest"/>
+        </classes>
+    </test>
+</suite>

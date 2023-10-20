@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE  suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!--Проверка авторизации-->
+    <test name="Регистрация">
+        <groups>
+            <run>
+                <include name="registration"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.Pages.Registration.RegistrationTest"/>
+        </classes>
+    </test>
+</suite>
