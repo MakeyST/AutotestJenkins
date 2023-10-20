@@ -10,6 +10,8 @@ public class TakeScreenshot extends BasePage{
     public TakeScreenshot(WebDriver driver) {
         super(driver);
     }
+
+    //Скриншот
     public void TakeScreenShot (String name){
         byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         Allure.addAttachment(name, new ByteArrayInputStream(Page));

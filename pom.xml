@@ -14,22 +14,32 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <extentreports-version>5.0.8</extentreports-version>
-        <rest-assured-version>4.4.0</rest-assured-version>
+        <rest-assured-version>5.3.1</rest-assured-version>
         <json-schema-validator-version>2.11.1</json-schema-validator-version>
         <allure-version>2.23.0</allure-version>
-        <junit-jupiter-version>5.8.0-M1</junit-jupiter-version>
+        <junit-jupiter-version>5.10.0-M1</junit-jupiter-version>
         <junit-version>4.13.2</junit-version>
         <selenium-version>4.9.1</selenium-version>
         <spring-boot-version>2.6.0</spring-boot-version>
-        <log4j-version>2.17.0</log4j-version>
+        <log4j-version>2.17.1</log4j-version>
         <testng-version>7.8.0</testng-version>
-        <poi-version>5.0.0</poi-version>
+        <poi-version>5.1.0</poi-version>
         <maven-core-version>3.9.2</maven-core-version>
         <maven-artifact-version>3.9.2</maven-artifact-version>
         <maven-plugin-api-version>3.9.2</maven-plugin-api-version>
         <maven-plugin-annotations-version>3.9.0</maven-plugin-annotations-version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
     <!-- Все dependency беру тут: https://mvnrepository.com/ -->
     <dependencies>
@@ -70,11 +80,6 @@
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
-            <artifactId>json-schema-validator</artifactId>
-            <version>${rest-assured-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>${rest-assured-version}</version>
             <scope>test</scope>
@@ -85,11 +90,6 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-rest-assured</artifactId>
             <version>${allure-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ru.yandex.qatools.ashot</groupId>
-            <artifactId>ashot</artifactId>
-            <version>1.5.4</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -276,9 +276,100 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.9</version> <!-- Здесь укажите актуальную версию Gson -->
+        </dependency>
+        <dependency>
+            <groupId>net.lightbody.bmp</groupId>
+            <artifactId>browsermob-core</artifactId>
+            <version>2.1.5</version> <!-- Используйте актуальную версию -->
+        </dependency>
+        <dependency>
+            <groupId>com.github.blibli-badak</groupId>
+            <artifactId>selenium-har-util</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <!-- Har -->
+        <dependency>
+            <groupId>de.sstoehr</groupId>
+            <artifactId>har-reader</artifactId>
+            <version>2.1.2</version> <!-- Используйте актуальную версию -->
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.14.0</version> <!-- Замените версию на актуальную -->
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.14.0</version> <!-- Используйте актуальную версию -->
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+            <version>2.14.0</version> <!-- Укажите актуальную версию -->
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.14.0</version> <!-- Замените версию на актуальную -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.1.0</version> <!-- Укажите актуальную версию -->
+        </dependency>
+
+        <!-- Ashot -->
+        <dependency>
+            <groupId>ru.yandex.qatools.ashot</groupId>
+            <artifactId>ashot</artifactId>
+            <version>1.5.4</version> <!-- Укажите актуальную версию -->
+        </dependency>
+
+        <!-- jenkins -->
+        <!--<dependency>
+            <groupId>org.jenkins-ci.main</groupId>
+            <artifactId>jenkins-core</artifactId>
+            <version>2.79</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.main</groupId>
+            <artifactId>jenkins-test-harness</artifactId>
+            <version>2.31</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.main</groupId>
+            <artifactId>jenkins-war</artifactId>
+            <version>2.86</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.main</groupId>
+            <artifactId>jenkins-test-harness-tools</artifactId>
+            <version>2.2</version>
+            <scope>test</scope>
+        </dependency>-->
+
+        <!-- selenoid -->
+        <dependency>
+            <groupId>com.github.somnambulaDreams</groupId>
+            <artifactId>web-ui</artifactId>
+            <version>0.1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.qa-maniac</groupId>
+            <artifactId>web-ui</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
     </dependencies>
-
-
 
     <build>
         <plugins>

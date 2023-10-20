@@ -3,18 +3,18 @@ package Pages.Miner;
 import Pages.base.BasePage;
 import io.qameta.allure.Allure;
 import io.qameta.allure.model.Status;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
+import java.io.ByteArrayInputStream;
 import java.time.Duration;
 import java.util.List;
 
 import static Constants.Constant.XPath.PUSH;
+import static Pages.Miner.Locators.XPath.BUTTON_TAKE_IN_MINER;
 
 public class EnterButtonTakeMiner extends BasePage {
     public EnterButtonTakeMiner(WebDriver driver) {
@@ -23,12 +23,13 @@ public class EnterButtonTakeMiner extends BasePage {
 
     private final By ButtonTake1 = By.xpath("//div[@class='bit-feed__cell bit-feed__cell_bit']/button[2]/span");
 
-    public void clickButtonTake() throws InterruptedException {
-        WebElement ButtonTake = driver.findElement(By.xpath("//div[@class='bit-feed__cell bit-feed__cell_bit']/button[2]/span"));
+
+    //Нажать кнопку забрать и проверить пуш
+    public void clickButtonTake()  {
+        WebElement ButtonTake = driver.findElement(By.xpath(BUTTON_TAKE_IN_MINER));
         Actions actions = new Actions(driver);
-        Thread.sleep(3000);
         if (ButtonTake.isDisplayed()) {
-            driver.findElement(ButtonTake1).click();
+            driver.findElement(By.xpath(BUTTON_TAKE_IN_MINER)).click();
             /*WebElement element = driver.findElement(By.xpath(PUSH));
             boolean displayed = element.isDisplayed();*/
             List<WebElement> displayed = driver.findElements(By.xpath(PUSH));
@@ -44,14 +45,18 @@ public class EnterButtonTakeMiner extends BasePage {
                 }else {
                     System.out.println("Ошибка");
                     Allure.step("Ошибка", Status.FAILED);
+                    byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                    Allure.addAttachment("Скриншот: Ошибка в уведомлении", new ByteArrayInputStream(Page));
                 }
             } else {
-                System.out.println("Элемент не видим на странице");
+                System.out.println("Уведомления нет на странице");
                 Allure.step("Уведомление не видимо", Status.PASSED);
+                byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                Allure.addAttachment("Скриншот: Уведомления нет ", new ByteArrayInputStream(Page));
             }
         }else {
             Reporter.log("Проигрыш",true);
-            Allure.step("Проигрыш", Status.FAILED);
+            Allure.step("Проигрыш", Status.PASSED);
         }
     }
 

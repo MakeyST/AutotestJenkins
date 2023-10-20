@@ -1,57 +1,62 @@
 package common;
 
+import Pages.Casino.Funtions;
+import net.lightbody.bmp.BrowserMobProxy;
+import net.lightbody.bmp.BrowserMobProxyServer;
+import net.lightbody.bmp.client.ClientUtil;
+import net.lightbody.bmp.proxy.CaptureType;
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
+import static io.restassured.RestAssured.proxy;
 
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import static Constants.Constant.TimeoutVariable.IMPLICIT_WAIT;
 import static common.Config.PLATFORM_AND_BROWSER;
 
 public class CommonActions {
-    /*public static WebDriver createDriver() {
 
-
-        WebDriver driver = null;
-
-
-            switch (PLATFORM_AND_BROWSER) {
-                case "win_chrome":
-                    System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-                    driver = new ChromeDriver();
-                    break;
-                default:
-                    Assert.fail("Некорректная платформа или браузер" + PLATFORM_AND_BROWSER);
-            }
-            driver.manage().window().maximize(); //окно будет максимальным
-            driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);//установка неявных ожиданий
-            return driver;
-        }
-    }*/
     private static WebDriver driver;
+    private static BrowserMobProxy proxy;
+    private ChromeOptions chromeOptions;
+    public static BrowserMobProxy getProxy() {
+        if (proxy == null) {
+            proxy = new BrowserMobProxyServer();
 
-    private CommonActions() {
-        // Приватный конструктор для Singleton
+            proxy.start(443);
+            proxy.enableHarCaptureTypes(CaptureType.REQUEST_CONTENT, CaptureType.RESPONSE_CONTENT);
+            // Получение Selenium Proxy объекта для настройки браузера
+            Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
+        }
+        return proxy;
     }
 
     public static WebDriver createDriver() {
         if (driver == null) {
-            // Инициализация WebDriver (в данном случае, ChromeDriver)
+            Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
             System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-            driver = new ChromeDriver();
+
+            // Настройка ChromeOptions для использования прокси
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.setProxy(seleniumProxy);
+            chromeOptions.setAcceptInsecureCerts(true);
+            chromeOptions.addArguments("--ignore-certificate-errors");
+            driver = new ChromeDriver(chromeOptions);
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         }
         return driver;
+
+
+
     }
 
-   /* public static void quitDriver() {
-        if (driver != null) {
-            driver.quit();
-            driver = null;
-        }
-    }*/
+
 }
 
 

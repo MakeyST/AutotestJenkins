@@ -1,2 +1,5 @@
-package API.Registration;public class SuccessReg {
+package API.Registration;
+
+public class SuccessReg {
+
 }

@@ -1,4 +1,4 @@
-package API;
+package API.Registration;
 
 public class Registration {
     private String email;
@@ -7,5 +7,13 @@ public class Registration {
     public Registration(String email, String password) {
         this.email = email;
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }

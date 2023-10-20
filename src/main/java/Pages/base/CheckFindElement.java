@@ -6,18 +6,23 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.ByteArrayInputStream;
 import java.time.Duration;
 
 import static Constants.Constant.XPath.*;
+import static Pages.Payment.Locators.XPath.*;
 
 
 public class CheckFindElement extends BasePage{
     public CheckFindElement(WebDriver driver) {
         super(driver);
     }
+
+    //Проверка существования окна
     public void checkWindow(String XPath,String name){
         try {
             Thread.sleep(1000);
+            //Ищем окно по Xpath
             WebElement Window = driver.findElement(By.xpath(XPath));
             System.out.println(name+"открыто");
             Allure.step("Проверка появления "+name, Status.PASSED);
@@ -26,36 +31,49 @@ public class CheckFindElement extends BasePage{
         } catch (NoSuchElementException e) {
             System.out.println("Ошибка");
             Allure.step("Нет "+name, Status.FAILED);
+            byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            Allure.addAttachment(name+ " не появилось", new ByteArrayInputStream(Page));
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
-
+    //Проверка Пуш уведомления
     public void CheckPush(){
+        //Ищем пуш уведомление
         WebElement element = driver.findElement(By.xpath(PUSH));
+        //Проверяем , что оно находится на странице
         if (element.isDisplayed()) {
             System.out.println("Уведомление видимо");
+            //Ищем текст пуша
             WebElement inputElement = driver.findElement(By.xpath(PUSH_TEXT));
             String value1 = inputElement.getText();
+            //Проверяем текст пуша
             if (value1.equals("Ваша ставка принята!")){
                 System.out.println("Ставка принята");
                 Allure.step("Ставка принята", Status.PASSED);
             }else {
                 System.out.println("Ошибка");
                 Allure.step("Ошибка", Status.FAILED);
+                //Проверяем текст пуша если прошлая проверка была неуспешной
                 if (value1.equals("Ставка на завершенный раунд")) {
                     System.out.println("Ставка на завершенный раунд");
                     Allure.step("Ставка на завершенный раунд", Status.PASSED);
+
                 }else {
                     System.out.println("Другая ошибка");
                     Allure.step("Другая ошибка", Status.FAILED);
+                    byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                    Allure.addAttachment("Скриншот: Ошибка в пуш уведомлении", new ByteArrayInputStream(Page));
                 }
             }
         }else {
             System.out.println("Элемент не видим на странице");
             Allure.step("Уведомление не видимо", Status.FAILED);
+            byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            Allure.addAttachment("Скриншот: Уведомления нет", new ByteArrayInputStream(Page));
         }
     }
+    //Проверяем что окна нет
     public void checkWindowIsGone(String XPath,String name){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         boolean elementNotVisible = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(XPath)));
@@ -65,8 +83,12 @@ public class CheckFindElement extends BasePage{
         } else {
             System.out.println("Элемент найден на странице.");
             Allure.step(name +" не исчезло", Status.FAILED);
+            byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            Allure.addAttachment("Скриншот: "+name+" не исчезло", new ByteArrayInputStream(Page));
+
         }
     }
+    //Проверяем что поле ввода промокода появилось после нажатия кнопки
     public void checkInputPromokod(){
         driver.findElement(By.xpath(BUTTOM_I_HAVE_A_PROMOKOD)).click();
         WebElement Promokod =  driver.findElement(By.xpath(INPUT_PROMOKOD));
@@ -76,8 +98,12 @@ public class CheckFindElement extends BasePage{
         }else {
             System.out.println("Поле для ввода промокода не появилось");
             Allure.step("Поле для ввода промокода не появилось", Status.PASSED);
+            byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            Allure.addAttachment("Скриншот: Поле для ввода промокода не появилось", new ByteArrayInputStream(Page));
         }
     }
+
+    //Проверяем что полученные данные не пустые
     public void checkPaymentWaitingWindow(){
         boolean timer = false;
         boolean Card = false;
@@ -97,6 +123,8 @@ public class CheckFindElement extends BasePage{
             else {
                 timer = false;
                 Allure.step("Таймер не работает", Status.FAILED);
+                byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                Allure.addAttachment("Скриншот: Таймер не работает", new ByteArrayInputStream(Page));
             }
         }
         //Проверяем есть ли карта и данные
@@ -159,6 +187,8 @@ public class CheckFindElement extends BasePage{
             }
         }catch (Exception e){}
         }
+
+        //Сравниваем суммы из подвала и сумму на карте
     public void checkAmountPayout() {
         Boolean Am = false;
         Boolean Am1 = false;
@@ -176,6 +206,8 @@ public class CheckFindElement extends BasePage{
             Am = false;
             System.out.println("Сумма в подвале и в поле не совпадают");
             Allure.step("Сумма в подвале и в поле не совпадают", Status.FAILED);
+            byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            Allure.addAttachment("Скриншот:Сумма в подвале и в поле не совпадают", new ByteArrayInputStream(Page));
         }
         /*WebElement PayoutFee = driver.findElement(By.xpath(PAYOUT_FEE));
         String PayoutFee1 = PayoutFee.getText();

@@ -8,7 +8,7 @@
             </run>
         </groups>
         <classes>
-            <class name="tests.Autorisation.AutorisationTest"/>
+            <class name="tests.Pages.Autorisation.AutorisationWithProxyTest"/>
         </classes>
     </test>
     <test name="Casino">
@@ -18,7 +18,7 @@
             </run>
         </groups>
         <classes>
-            <class name="tests.Casino.CasinoTest"/>
+            <class name="tests.Pages.Casino.CasinoTest"/>
         </classes>
     </test>
 </suite>

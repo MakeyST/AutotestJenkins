@@ -17,7 +17,7 @@ import java.util.Set;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class RegistrationAPITest {
+public class RegistrationAPI300Users {
 
     private static final String BASE_URL = "https://api.gz62f.top";
     private static final String REGISTER_ENDPOINT = "/auth/register/email";

@@ -9,22 +9,22 @@
             </run>
         </groups>
         <classes>
-            <class name="tests.Autorisation.AutorisationTest"/>
+            <class name="tests.Pages.Autorisation.AutorisationTest"/>
         </classes>
     </test>
-    <!--Проверка игры Минер-->
-    <!--<test name="Минер">
+    <!-- Проверка игры Минер-->
+    <test name="Минер">
         <groups>
             <run>
                 <include name="miner"/>
             </run>
         </groups>
         <classes>
-            <class name="tests.pageMiner.PageMinerTest"/>
-            <class name="tests.pageMiner.PlayTheGameMinerTest" />
+            <class name="tests.Pages.pageMiner.PageMinerTest"/>
+            <class name="tests.Pages.pageMiner.PlayTheGameMinerTest" />
         </classes>
     </test>
-    &lt;!&ndash;Проверка игры Краш&ndash;&gt;
+    <!--Проверка игры Краш-->
     <test name="Краш">
         <groups>
             <run>
@@ -32,11 +32,11 @@
             </run>
         </groups>
         <classes>
-            <class name="tests.pageCrash.PageCrashTest" />
-            <class name="tests.pageCrash.LoginAndTrytoPlayCrashTest" />
+            <class name="tests.Pages.pageCrash.PageCrashTest" />
+            <class name="tests.Pages.pageCrash.LoginAndTrytoPlayCrashTest" />
         </classes>
     </test>
-    &lt;!&ndash;Проверка игры Монетка&ndash;&gt;
+    <!--Проверка игры Монетка-->
     <test name="Монетка">
         <groups>
             <run>
@@ -44,23 +44,23 @@
             </run>
         </groups>
         <classes>
-            <class name="tests.PageCoin.PageCoinTest" />
-            <class name="tests.PageCoin.LoginAndPlayCoinTest" />
+            <class name="tests.Pages.PageCoin.PageCoinTest" />
+            <class name="tests.Pages.PageCoin.LoginAndPlayCoinTest" />
         </classes>
-    </test>-->
+    </test>
     <!--Проверка игры Астероид-->
-    <!--<test name="Астероид">
+    <test name="Астероид">
         <groups>
             <run>
                 <include name="asteroid"/>
             </run>
         </groups>
         <classes>
-            <class name="tests.PageAsteroid.PageAsteroidTest" />
-            <class name="tests.PageAsteroid.LoginAndTrytoPlayAsteroidTest" />
+            <class name="tests.Pages.PageAsteroid.PageAsteroidTest" />
+            <class name="tests.Pages.PageAsteroid.LoginAndTrytoPlayAsteroidTest" />
         </classes>
-    </test>-->
-    <!--Проверка игры Кейсы-->
+    </test>
+    <!-- Проверка игры Кейсы-->
     <test name="Кейсы">
         <groups>
             <run>
@@ -68,9 +68,9 @@
             </run>
         </groups>
         <classes>
-            <class name="tests.pageCases.PageCasesTest" />
-            <class name="tests.pageCases.BarCasesTest" />
-            <class name="tests.pageCases.PlayCasesTest"/>
+            <class name="tests.Pages.pageCases.PageCasesTest" />
+            <class name="tests.Pages.pageCases.BarCasesTest" />
+            <class name="tests.Pages.pageCases.PlayCasesTest"/>
         </classes>
     </test>
 </suite>

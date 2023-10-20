@@ -1,20 +1,12 @@
 package Pages.Profile;
 
-import Pages.Autorization.AutorizationPage;
-import Pages.Crash.CrashPage;
 import Pages.base.BasePage;
 import io.qameta.allure.Allure;
 import io.qameta.allure.model.Status;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+import org.openqa.selenium.*;
 
-import java.time.Duration;
+import java.io.ByteArrayInputStream;
 
-import static Constants.Constant.Data.EMAIL_PASSWORD;
 import static Constants.Constant.XPath.*;
 import static Constants.Constant.XPath.PUSH_TEXT;
 
@@ -22,14 +14,8 @@ public class WindowProfilePage extends BasePage {
     public WindowProfilePage(WebDriver driver) {
         super(driver);
     }
-    public void Open(String xpath){
-        driver.findElement(By.xpath(xpath)).click();
-    }
-    public void inputText(String xpath, String text) throws InterruptedException {
-        WebElement inputField = driver.findElement(By.xpath(xpath));
-        inputField.clear();
-        inputField.sendKeys(text);
-    }
+
+    //Проверяем количество элементов в таблице
     public void checkElements(String xpath){
         try {
             int elements = driver.findElements(By.xpath(xpath)).size();
@@ -43,6 +29,8 @@ public class WindowProfilePage extends BasePage {
             }catch(Exception e){
         }
     }
+
+    //Проверяем пуш при изменении нинейма
     public void CheckPushChangeNickname(){
         WebElement element = driver.findElement(By.xpath(PUSH));
         if (element.isDisplayed()) {
@@ -71,6 +59,8 @@ public class WindowProfilePage extends BasePage {
             Allure.step("Уведомление не видимо", Status.FAILED);
         }
     }
+
+    //Проверяем пуш при изменении пароля
     public void CheckPushChangePassword(){
         WebElement element = driver.findElement(By.xpath(PUSH));
         if (element.isDisplayed()) {
@@ -94,6 +84,32 @@ public class WindowProfilePage extends BasePage {
         }else {
             System.out.println("Элемент не видим на странице");
             Allure.step("Уведомление не видимо", Status.FAILED);
+        }
+    }
+    public void CheckPush(){
+        //Ищем пуш уведомление
+        WebElement element = driver.findElement(By.xpath(PUSH));
+        //Проверяем , что оно находится на странице
+        if (element.isDisplayed()) {
+            System.out.println("Уведомление видимо");
+            //Ищем текст пуша
+            WebElement inputElement = driver.findElement(By.xpath(PUSH_TEXT));
+            String value1 = inputElement.getText();
+            //Проверяем текст пуша
+            if (value1.equals("Введен недействительный промокод!")){
+                System.out.println("Введен недействительный промокод!");
+                Allure.step("Введен недействительный промокод!", Status.PASSED);
+            }else {
+                System.out.println("Ошибка");
+                Allure.step("Ошибка", Status.FAILED);
+                byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                Allure.addAttachment("Скриншот: Ошибка", new ByteArrayInputStream(Page));
+            }
+        }else {
+            System.out.println("Элемент не видим на странице");
+            Allure.step("Уведомление не видимо", Status.FAILED);
+            byte[] Page = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            Allure.addAttachment("Скриншот: Уведомления нет", new ByteArrayInputStream(Page));
         }
     }
 

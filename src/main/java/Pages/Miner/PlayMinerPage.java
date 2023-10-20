@@ -10,6 +10,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.time.Instant;
+import java.util.List;
+import java.util.Random;
+
+import static Pages.Miner.Locators.XPath.BUTTON_SLOT_MINER;
 
 public class PlayMinerPage extends BasePage {
     public PlayMinerPage(WebDriver driver) {
@@ -17,19 +22,22 @@ public class PlayMinerPage extends BasePage {
     }
     private final By SlotMiner1 = By.xpath("//div[@class='miner__cells__row']/div[15]/div");
 
-    @Test
-    @Description("Нажимаем одну из ячеек в игре")
-    public PlayMinerPage enterSlotMiner() {
-        try {
-            // Подождать 1 секунды (1000 миллисекунд)
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    //Нажимаем раундомную ячейку в игре
+    public void enterSlotMiner() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement SlotMiner = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='miner__cells__row']/div[15]/div")));
-        driver.findElement(SlotMiner1).click();
+        List<WebElement> elements = driver.findElements(By.xpath(BUTTON_SLOT_MINER));
 
-        return this;
+        // Генерация случайного индекса элемента
+        Random rand = new Random();
+        int randomIndex = rand.nextInt(elements.size());
+
+        // Выбор случайного элемента для нажатия
+        WebElement randomElement = elements.get(randomIndex);
+        // Нажатие на случайный элемент
+        Thread.sleep(1000);
+        wait.until(ExpectedConditions.elementToBeClickable(randomElement));
+        randomElement.click();
+
     }
 }
+
