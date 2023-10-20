@@ -15,13 +15,17 @@ import static io.qameta.allure.Allure.step;
 
 public class LoginAndTrytoPlayMinerTest extends BaseTest {
 
-
+@SuppressWarnings("Авторизация и нажатие кнопки Играть на странице Минер")
     public LoginAndTrytoPlayMinerTest() throws MalformedURLException {
+        step("Нажатие кнопки Войти ", () -> {
+            basepage.ClickById(ID_BUTTON_LOG_IN_WINAUT);
+            WaitUtils.waitForPageToLoad();
+        });
     }
+
 
     @Test(description = "Авторизация и нажатие кнопки Играть на странице Минер")
     @Description("Смотрим тест в целом")
-
     public void checkButtonPlayMiner() {
         try{
         /*step("Переход на страницу игры ", () -> {
