@@ -21,7 +21,7 @@ public class CommonActionToAll {
             // Настройка ChromeOptions для использования прокси
             ChromeOptions chromeOptions = new ChromeOptions();
             driver = new RemoteWebDriver(new URL("http://selenoid-server:4444/wd/hub"), chromeOptions);
-            driver = new ChromeDriver(chromeOptions);
+           /* driver = new ChromeDriver(chromeOptions);*/
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         }

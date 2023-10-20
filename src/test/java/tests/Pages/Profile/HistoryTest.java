@@ -5,10 +5,15 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
+
 import static Pages.Profile.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
 
 public class HistoryTest extends BaseTest {
+    public HistoryTest() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка истории",priority = 2,groups = "profile")
     @Description("Смотрим тест в целом")
     public void Profile (){

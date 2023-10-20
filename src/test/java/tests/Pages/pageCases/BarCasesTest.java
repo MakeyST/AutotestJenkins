@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
 import java.time.Instant;
 
 import static Constants.Constant.XPath.PUSH;
@@ -16,6 +17,9 @@ import static Pages.Cases.Locators.classes.CLASS_CASE_NEWBIE;
 import static io.qameta.allure.Allure.step;
 
 public class BarCasesTest extends BaseTest {
+    public BarCasesTest() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка ленты  в игре кейсы",priority = 2,groups = "cases")
     @Attachment(value = "Screenshot", type = "image/png")
     @Description("Смотрим тест в целом")

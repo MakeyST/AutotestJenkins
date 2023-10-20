@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.XPath.*;
 import static Pages.Coin.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
@@ -16,6 +18,9 @@ import static io.qameta.allure.Allure.step;
 
 public class LoginAndPlayCoinTest extends BaseTest {
 
+
+    public LoginAndPlayCoinTest() throws MalformedURLException {
+    }
 
     @Test(description = "Проверка авторизации и игры в монетка",priority = 2,groups = "coin")
     @Attachment(value = "Screenshot", type = "image/png")

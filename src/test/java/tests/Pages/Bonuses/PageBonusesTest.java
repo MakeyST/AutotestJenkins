@@ -6,12 +6,17 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.Id.ID_BUTTON_BONUSES;
 import static Constants.Constant.Id.ID_MENU;
 import static Constants.Constant.XPath.BUTTON_ASTEROID_PAGE;
 import static io.qameta.allure.Allure.step;
 
 public class PageBonusesTest extends BaseTest {
+    public PageBonusesTest() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка открытия страницы Бонусы",priority = 2,groups = "bonuses")
     @Attachment(value = "Screenshot", type = "image/png")
     @Description("Проверка открытия страницы бонусы ")

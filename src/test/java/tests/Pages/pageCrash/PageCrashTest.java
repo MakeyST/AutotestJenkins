@@ -10,12 +10,17 @@ import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.Id.ID_MENU;
 
 import static Constants.Constant.XPath.BUTTON_CRASH_PAGE;
 import static io.qameta.allure.Allure.step;
 
 public class PageCrashTest extends BaseTest {
+
+    public PageCrashTest() throws MalformedURLException {
+    }
 
     @Test(description = "Проверка входа на страницу игры Краш ччерез боковую панель",priority = 2,groups = "crash")
     @Description("Проверка входа на страницу игры Краш ччерез боковую панель")

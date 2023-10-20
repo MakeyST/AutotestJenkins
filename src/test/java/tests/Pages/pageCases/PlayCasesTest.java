@@ -7,15 +7,20 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.XPath.PUSH;
 import static Pages.Cases.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
 
 public class PlayCasesTest extends BaseTest {
+    public PlayCasesTest() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка авторизации и игры в кейсы",priority = 2,groups = "cases")
     @Attachment(value = "Screenshot", type = "image/png")
     @Description("Смотрим тест в целом")
-    public void checkPlayCases() {
+    public void checkPlayCases(){
         try {
             step("Переход к дешевому кейсу",() ->{
                 //Ждем появление элемента Дешевый кейс

@@ -7,6 +7,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.Id.ID_BUTTON_FAQ;
 import static Constants.Constant.Id.ID_MENU;
 import static Constants.Constant.XPath.BUTTON_COIN_PAGE;
@@ -14,6 +16,9 @@ import static Pages.FAQ.Locators.XPath.BUTTON_WALLET_QUESTIONS;
 import static io.qameta.allure.Allure.step;
 
 public class GeneralQuestions extends BaseTest {
+
+    public GeneralQuestions() throws MalformedURLException {
+    }
 
     @Test(description = "Проверка FAQ",priority = 3,groups = "FAQ")
     @Description("Смотрим тест в целом")

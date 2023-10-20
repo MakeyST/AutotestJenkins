@@ -11,6 +11,8 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
+
 import static API.Costant.BASE_URL;
 import static Constants.Constant.Id.ID_BUTTON_CASINO;
 import static Pages.Casino.Locators.XPath.BUTTON_PLAY_STACK;
@@ -22,6 +24,9 @@ import static java.lang.Thread.sleep;
 
 public class CasinoTest extends BaseTest {
 
+
+    public CasinoTest() throws MalformedURLException {
+    }
 
     @Test(description = "Казино", priority = 3, groups = "casino")
     @Description("Смотрим тест в целом")

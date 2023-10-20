@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
 
+import java.net.MalformedURLException;
 
 import static Constants.Constant.Id.ID_MENU;
 
@@ -18,6 +19,9 @@ import static io.qameta.allure.Allure.step;
 
 @DisplayName("фыыфв")
 public class PageMinerTest extends BaseTest {
+    public PageMinerTest() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка перехода на страницу игры через боковую панель",priority = 1,groups = "miner")
     @Description("Проверка перехода на страницу игры через боковую панель")
     public void checkIsRedirectToPageMiner(){

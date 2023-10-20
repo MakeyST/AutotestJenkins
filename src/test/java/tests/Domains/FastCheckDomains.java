@@ -19,6 +19,7 @@ import tests.base.basetests.BaseTest;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -35,6 +36,9 @@ import static io.qameta.allure.Allure.step;
 
 public class FastCheckDomains extends BaseTest {
 
+
+    public FastCheckDomains() throws MalformedURLException {
+    }
 
     @Test(description = "Быстрая проверка доменов",priority = 4,groups = "domains")
     @Severity(value= SeverityLevel.CRITICAL)

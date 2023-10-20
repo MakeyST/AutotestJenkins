@@ -7,12 +7,17 @@ import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.Id.ID_BUTTON_LOG_IN_WINAUT;
 
 import static io.qameta.allure.Allure.step;
 
 public class LoginAndTrytoPlayMinerTest extends BaseTest {
 
+
+    public LoginAndTrytoPlayMinerTest() throws MalformedURLException {
+    }
 
     @Test(description = "Авторизация и нажатие кнопки Играть на странице Минер")
     @Description("Смотрим тест в целом")

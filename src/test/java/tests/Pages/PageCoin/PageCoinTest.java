@@ -10,6 +10,8 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.Id.ID_MENU;
 
 import static Constants.Constant.XPath.BUTTON_COIN_PAGE;
@@ -18,7 +20,10 @@ import static io.qameta.allure.Allure.step;
 
 public class PageCoinTest extends BaseTest {
 
-        @Test(description = "Проверка перехода на страницу игры через боковую панель",priority = 2,groups = "coin")
+    public PageCoinTest() throws MalformedURLException {
+    }
+
+    @Test(description = "Проверка перехода на страницу игры через боковую панель",priority = 2,groups = "coin")
         @Attachment(value = "Screenshot", type = "image/png")
         @Description("Проверка перехода на страницу игры через боковую панель")
         public void checkIsRedirectToPageCoin(){

@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
 import java.io.ByteArrayInputStream;
+import java.net.MalformedURLException;
 
 import static Constants.Constant.Id.ID_MENU;
 import static Constants.Constant.Urls.GETX_HOME_PAGE;
@@ -23,6 +24,9 @@ import static Constants.Constant.XPath.BUTTON_COIN_PAGE;
 import static io.qameta.allure.Allure.step;
 
 public class PageAsteroidTest extends BaseTest {
+    public PageAsteroidTest() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка открытия страницы игры Астероид через боковую панель",priority = 2,groups = "asteroid")
     @Attachment(value = "Screenshot", type = "image/png")
     @Description("Проверка открытия страницы игры Астероид через боковую панель ")

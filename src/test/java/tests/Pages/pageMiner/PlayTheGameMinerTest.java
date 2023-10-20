@@ -10,11 +10,16 @@ import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.XPath.*;
 import static Pages.Miner.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
 
 public class PlayTheGameMinerTest extends BaseTest {
+    public PlayTheGameMinerTest() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка авторизации и игры в минер",priority = 2,groups = "miner")
     @Description("Смотрим тест в целом")
     public void checkPlayMiner() {

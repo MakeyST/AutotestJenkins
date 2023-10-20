@@ -11,6 +11,8 @@ import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.Data.*;
 import static Constants.Constant.Id.*;
 
@@ -22,6 +24,9 @@ import static io.qameta.allure.Allure.step;
 
 
 public class AutorisationTest extends BaseTest {
+
+    public AutorisationTest() throws MalformedURLException {
+    }
 
     @Test(description = "Проверка авторизации",priority = 1,groups = "autorisation")
     @Severity(value= SeverityLevel.CRITICAL)

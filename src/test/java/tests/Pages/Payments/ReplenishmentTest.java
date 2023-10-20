@@ -5,10 +5,15 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
+
 import static Pages.Payment.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
 
 public class ReplenishmentTest extends BaseTest {
+
+    public ReplenishmentTest() throws MalformedURLException {
+    }
 
     @Test(description = "Проверка окна пополнение",priority = 2,groups = "wallet")
     @Description("Смотрим тест в целом")

@@ -6,11 +6,16 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.Id.ID_BUTTON_BETS;
 import static Pages.Bets.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
 
 public class BetTest extends BaseTest {
+    public BetTest() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка выставления ставки",priority = 2,groups = "bets")
     @Attachment(value = "Screenshot", type = "image/png")
     @Description("Проверка выставления ставки")

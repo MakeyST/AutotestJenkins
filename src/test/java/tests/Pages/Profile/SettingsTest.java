@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.Data.*;
 import static Constants.Constant.Urls.GETX_HOME_PAGE;
 import static Constants.Constant.XPath.*;
@@ -13,6 +15,9 @@ import static Pages.Profile.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
 
 public class SettingsTest extends BaseTest {
+    public SettingsTest() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка профиля",priority = 2,groups = "profile")
     @Description("Смотрим тест в целом")
     public void Settings (){

@@ -11,6 +11,8 @@ import io.qameta.allure.Description;
 import tests.base.basetests.BaseTest;
 
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.XPath.*;
 import static Pages.Crash.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
@@ -18,6 +20,9 @@ import static io.qameta.allure.Allure.step;
 
 public class LoginAndTrytoPlayCrashTest extends BaseTest {
 
+
+    public LoginAndTrytoPlayCrashTest() throws MalformedURLException {
+    }
 
     @Test(description = "Провверка авторизации и игры в Краш",priority = 2,groups = "crash")
     @Description("Смотрим тест в целом")

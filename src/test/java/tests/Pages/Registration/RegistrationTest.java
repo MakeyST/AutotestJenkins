@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 import static Constants.Constant.Data.PASSWORD_LOGIN;
 import static Constants.Constant.Data.RANDOM_EMAIL;
@@ -19,6 +20,9 @@ import static Pages.Registration.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
 
 public class RegistrationTest extends BaseTest {
+
+    public RegistrationTest() throws MalformedURLException {
+    }
 
     @Test(description = "Проверка регистрации",priority = 2,groups = "registration")
         @Description("Проверка регистрации")

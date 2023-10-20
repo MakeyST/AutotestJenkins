@@ -19,6 +19,7 @@ import tests.base.basetests.BaseTest;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -36,6 +37,9 @@ import static Pages.Registration.Locators.XPath.*;
 import static io.qameta.allure.Allure.step;
 
 public class RegistrationDomains extends BaseTest {
+    public RegistrationDomains() throws MalformedURLException {
+    }
+
     @Test(description = "Проверка доменов",priority = 4,groups = "domains")
     @Severity(value= SeverityLevel.CRITICAL)
     @Description("Проверка доменов")

@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import tests.base.basetests.BaseTest;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 
 import static Constants.Constant.Data.PROMOKOD;
@@ -21,6 +22,9 @@ import static io.qameta.allure.Allure.step;
 
 
 public class ProfileTest extends BaseTest {
+
+    public ProfileTest() throws MalformedURLException {
+    }
 
     @Test(description = "Проверка профиля",priority = 2,groups = "profile")
     @Description("Смотрим тест в целом")
@@ -93,5 +97,7 @@ public class ProfileTest extends BaseTest {
         }catch(Exception e){
 
         }
+
     }
+
 }
