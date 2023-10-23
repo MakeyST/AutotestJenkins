@@ -7,7 +7,6 @@ import Pages.base.BasePage;
 import io.qameta.allure.Allure;
 
 import io.qameta.allure.model.Status;
-import net.lightbody.bmp.BrowserMobProxy;
 
 import net.lightbody.bmp.core.har.Har;
 import net.lightbody.bmp.core.har.HarEntry;
@@ -28,7 +27,7 @@ public class Funtions extends BasePage {
     public Funtions(WebDriver driver) {
         super(driver);
     }
-    public void checkResponses(BrowserMobProxy proxy) throws InterruptedException {
+    public void checkResponses() throws InterruptedException {
 
         for (int i = 30; i < 31; i++) {
                 while (true) {

@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import tests.base.basetests.BaseTest;
 
 
+import java.net.MalformedURLException;
+
 import static Constants.Constant.Id.ID_BUTTON_LOG_IN_WINAUT;
 
 import static io.qameta.allure.Allure.step;
@@ -14,11 +16,18 @@ import static io.qameta.allure.Allure.step;
 public class LoginAndTrytoPlayMinerTest extends BaseTest {
 
 
+    public LoginAndTrytoPlayMinerTest() throws MalformedURLException {
+        step("Нажатие кнопки Войти ", () -> {
+            basepage.ClickById(ID_BUTTON_LOG_IN_WINAUT);
+            WaitUtils.waitForPageToLoad();
+            TakeScreenshot.TakeScreenShot("Скриншот: Страница Минер , авторизованного пользователя");
+        });
+    }
+
     @Test(description = "Авторизация и нажатие кнопки Играть на странице Минер")
     @Description("Смотрим тест в целом")
 
     public void checkButtonPlayMiner() {
-        try{
         /*step("Переход на страницу игры ", () -> {
             basepage.open(MINER_GAME_PAGE);
             TestHttpResponseCode.TestHttpResponseCode();
@@ -51,8 +60,6 @@ public class LoginAndTrytoPlayMinerTest extends BaseTest {
       /*  step("Нажатие кнопки Играть", () -> {
             WaitButtonPlayMiner.clickButtonPlayMiner();
         });*/
-        } catch (Exception e) {
-        }
 
     }
 
