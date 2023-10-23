@@ -6,32 +6,25 @@ import Pages.Bets.FunctionsBet;
 import Pages.Bonuses.FunctionsRoullet;
 import Pages.Cases.BarCases;
 import Pages.Cases.CasesPage;
-import Pages.Casino.Funtions;
-import Pages.Coin.*;
+import Pages.Coin.EnterButtonTakeCoin;
+import Pages.Coin.PlayCoinPage;
 import Pages.FAQ.Functions;
-import Pages.Miner.*;
+import Pages.Miner.EnterButtonTakeMiner;
+import Pages.Miner.PlayMinerPage;
 import Pages.Payment.Buttons;
 import Pages.Profile.WindowProfilePage;
 import Pages.base.*;
 import common.CommonActionToAll;
-import common.CommonActions;
-import net.lightbody.bmp.BrowserMobProxy;
-import net.lightbody.bmp.BrowserMobProxyServer;
-import net.lightbody.bmp.client.ClientUtil;
-import net.lightbody.bmp.proxy.CaptureType;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeTest;
 
 import java.net.MalformedURLException;
 import java.time.Duration;
 
 import static common.Config.CLEAR_COOKIES_AND_STORAGE;
 import static common.Config.HOLD_BROWSER_OPEN;
-import static io.restassured.RestAssured.proxy;
 
 public class BaseTest {
 
@@ -66,7 +59,6 @@ public class BaseTest {
     protected WindowProfilePage WindowProfilePage = new WindowProfilePage(driver);
     protected Functions Functions = new Functions(driver);
 
-    protected Funtions Funtions = new Funtions(driver);
     protected CasesPage CasesPage = new CasesPage(driver);
     protected BarCases BarCases = new BarCases(driver);
     protected FunctionsBet FunctionsBet = new FunctionsBet(driver, Duration.ofSeconds(10));
