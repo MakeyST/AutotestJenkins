@@ -1,0 +1,1000 @@
+# Created on 2023-10-02T15:21:57.273
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:386)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+
+# Created on 2023-10-02T15:21:59.721
+Unexpected IOException with stream: S
+
+# Created on 2023-10-02T15:21:59.721
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:21:59.722
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:21:59.722
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:21:59.723
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:21:59.723
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:21:59.723
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:21:59.724
+Unexpected IOException with stream: g
+
+# Created on 2023-10-02T15:21:59.725
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:21:59.725
+Unexpected IOException with stream: C
+
+# Created on 2023-10-02T15:21:59.725
+Unexpected IOException with stream: h
+
+# Created on 2023-10-02T15:21:59.725
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:21:59.727
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:21:59.727
+Unexpected IOException with stream: m
+
+# Created on 2023-10-02T15:21:59.728
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.728
+Unexpected IOException with stream: D
+
+# Created on 2023-10-02T15:21:59.729
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:21:59.729
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:21:59.729
+Unexpected IOException with stream: v
+
+# Created on 2023-10-02T15:21:59.730
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.730
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:21:59.730
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:21:59.731
+Unexpected IOException with stream: 1
+
+# Created on 2023-10-02T15:21:59.731
+Unexpected IOException with stream: 1
+
+# Created on 2023-10-02T15:21:59.732
+Unexpected IOException with stream: 4
+
+# Created on 2023-10-02T15:21:59.732
+Unexpected IOException with stream: .
+
+# Created on 2023-10-02T15:21:59.732
+Unexpected IOException with stream: 0
+
+# Created on 2023-10-02T15:21:59.733
+Unexpected IOException with stream: .
+
+# Created on 2023-10-02T15:21:59.733
+Unexpected IOException with stream: 5
+
+# Created on 2023-10-02T15:21:59.733
+Unexpected IOException with stream: 7
+
+# Created on 2023-10-02T15:21:59.734
+Unexpected IOException with stream: 3
+
+# Created on 2023-10-02T15:21:59.735
+Unexpected IOException with stream: 5
+
+# Created on 2023-10-02T15:21:59.735
+Unexpected IOException with stream: .
+
+# Created on 2023-10-02T15:21:59.735
+Unexpected IOException with stream: 9
+
+# Created on 2023-10-02T15:21:59.736
+Unexpected IOException with stream: 0
+
+# Created on 2023-10-02T15:21:59.736
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:21:59.736
+Unexpected IOException with stream: (
+
+# Created on 2023-10-02T15:21:59.737
+Unexpected IOException with stream: 3
+
+# Created on 2023-10-02T15:21:59.737
+Unexpected IOException with stream: 8
+
+# Created on 2023-10-02T15:21:59.737
+Unexpected IOException with stream: 6
+
+# Created on 2023-10-02T15:21:59.737
+Unexpected IOException with stream: b
+
+# Created on 2023-10-02T15:21:59.738
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:21:59.738
+Unexpected IOException with stream: 0
+
+# Created on 2023-10-02T15:21:59.739
+Unexpected IOException with stream: 9
+
+# Created on 2023-10-02T15:21:59.739
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.740
+Unexpected IOException with stream: 8
+
+# Created on 2023-10-02T15:21:59.740
+Unexpected IOException with stream: f
+
+# Created on 2023-10-02T15:21:59.740
+Unexpected IOException with stream: 4
+
+# Created on 2023-10-02T15:21:59.741
+Unexpected IOException with stream: f
+
+# Created on 2023-10-02T15:21:59.741
+Unexpected IOException with stream: 2
+
+# Created on 2023-10-02T15:21:59.741
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.741
+Unexpected IOException with stream: 0
+
+# Created on 2023-10-02T15:21:59.742
+Unexpected IOException with stream: 2
+
+# Created on 2023-10-02T15:21:59.742
+Unexpected IOException with stream: 5
+
+# Created on 2023-10-02T15:21:59.743
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.743
+Unexpected IOException with stream: d
+
+# Created on 2023-10-02T15:21:59.744
+Unexpected IOException with stream: d
+
+# Created on 2023-10-02T15:21:59.745
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:21:59.745
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.745
+Unexpected IOException with stream: 1
+
+# Created on 2023-10-02T15:21:59.745
+Unexpected IOException with stream: 2
+
+# Created on 2023-10-02T15:21:59.746
+Unexpected IOException with stream: 3
+
+# Created on 2023-10-02T15:21:59.746
+Unexpected IOException with stream: f
+
+# Created on 2023-10-02T15:21:59.746
+Unexpected IOException with stream: 3
+
+# Created on 2023-10-02T15:21:59.746
+Unexpected IOException with stream: 6
+
+# Created on 2023-10-02T15:21:59.747
+Unexpected IOException with stream: f
+
+# Created on 2023-10-02T15:21:59.747
+Unexpected IOException with stream: 6
+
+# Created on 2023-10-02T15:21:59.747
+Unexpected IOException with stream: 2
+
+# Created on 2023-10-02T15:21:59.748
+Unexpected IOException with stream: 6
+
+# Created on 2023-10-02T15:21:59.748
+Unexpected IOException with stream: 3
+
+# Created on 2023-10-02T15:21:59.748
+Unexpected IOException with stream: 0
+
+# Created on 2023-10-02T15:21:59.749
+Unexpected IOException with stream: 9
+
+# Created on 2023-10-02T15:21:59.749
+Unexpected IOException with stream: 6
+
+# Created on 2023-10-02T15:21:59.749
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:21:59.749
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.750
+Unexpected IOException with stream: 4
+
+# Created on 2023-10-02T15:21:59.750
+Unexpected IOException with stream: 9
+
+# Created on 2023-10-02T15:21:59.750
+Unexpected IOException with stream: -
+
+# Created on 2023-10-02T15:21:59.751
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:21:59.751
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.751
+Unexpected IOException with stream: f
+
+# Created on 2023-10-02T15:21:59.751
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:21:59.752
+Unexpected IOException with stream: /
+
+# Created on 2023-10-02T15:21:59.752
+Unexpected IOException with stream: b
+
+# Created on 2023-10-02T15:21:59.752
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:21:59.752
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:21:59.753
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:21:59.753
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:21:59.753
+Unexpected IOException with stream: h
+
+# Created on 2023-10-02T15:21:59.754
+Unexpected IOException with stream: -
+
+# Created on 2023-10-02T15:21:59.754
+Unexpected IOException with stream: h
+
+# Created on 2023-10-02T15:21:59.755
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.755
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:21:59.755
+Unexpected IOException with stream: d
+
+# Created on 2023-10-02T15:21:59.761
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:21:59.761
+Unexpected IOException with stream: /
+
+# Created on 2023-10-02T15:21:59.764
+Unexpected IOException with stream: 5
+
+# Created on 2023-10-02T15:21:59.765
+Unexpected IOException with stream: 7
+
+# Created on 2023-10-02T15:21:59.766
+Unexpected IOException with stream: 3
+
+# Created on 2023-10-02T15:21:59.767
+Unexpected IOException with stream: 5
+
+# Created on 2023-10-02T15:21:59.770
+Unexpected IOException with stream: @
+
+# Created on 2023-10-02T15:21:59.774
+Unexpected IOException with stream: {
+
+# Created on 2023-10-02T15:21:59.775
+Unexpected IOException with stream: #
+
+# Created on 2023-10-02T15:21:59.775
+Unexpected IOException with stream: 1
+
+# Created on 2023-10-02T15:21:59.777
+Unexpected IOException with stream: 0
+
+# Created on 2023-10-02T15:21:59.778
+Unexpected IOException with stream: 5
+
+# Created on 2023-10-02T15:21:59.786
+Unexpected IOException with stream: 2
+
+# Created on 2023-10-02T15:21:59.787
+Unexpected IOException with stream: }
+
+# Created on 2023-10-02T15:21:59.787
+Unexpected IOException with stream: )
+
+# Created on 2023-10-02T15:21:59.788
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:21:59.788
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:21:59.788
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:21:59.795
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:21:59.796
+Unexpected IOException with stream: p
+
+# Created on 2023-10-02T15:21:59.797
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:21:59.803
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:21:59.806
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:21:59.815
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:21:59.833
+Unexpected IOException with stream: 3
+
+# Created on 2023-10-02T15:21:59.836
+Unexpected IOException with stream: 5
+
+# Created on 2023-10-02T15:21:59.840
+Unexpected IOException with stream: 3
+
+# Created on 2023-10-02T15:21:59.846
+Unexpected IOException with stream: 0
+
+# Created on 2023-10-02T15:21:59.847
+Unexpected IOException with stream: 1
+
+# Created on 2023-10-02T15:21:59.848
+Unexpected IOException with stream: 
+
+# Created on 2023-10-02T15:21:59.914
+Unexpected IOException with stream: 
+
+
+# Created on 2023-10-02T15:21:59.915
+Unexpected IOException with stream: O
+
+# Created on 2023-10-02T15:21:59.916
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:21:59.920
+Unexpected IOException with stream: l
+
+# Created on 2023-10-02T15:21:59.922
+Unexpected IOException with stream: y
+
+# Created on 2023-10-02T15:21:59.925
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:21:59.925
+Unexpected IOException with stream: l
+
+# Created on 2023-10-02T15:21:59.926
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:21:59.927
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:21:59.929
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:21:59.929
+Unexpected IOException with stream: l
+
+# Created on 2023-10-02T15:21:59.930
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:21:59.930
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:21:59.931
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:21:59.931
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:21:59.932
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:21:59.932
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:21:59.933
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:21:59.987
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:21:59.991
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.036
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.095
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:22:00.099
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.099
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.104
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:22:00.105
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.105
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.106
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.106
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:22:00.107
+Unexpected IOException with stream: l
+
+# Created on 2023-10-02T15:22:00.107
+Unexpected IOException with stream: l
+
+# Created on 2023-10-02T15:22:00.109
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.110
+Unexpected IOException with stream: w
+
+# Created on 2023-10-02T15:22:00.111
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.112
+Unexpected IOException with stream: d
+
+# Created on 2023-10-02T15:22:00.112
+Unexpected IOException with stream: .
+
+# Created on 2023-10-02T15:22:00.112
+Unexpected IOException with stream: 
+
+# Created on 2023-10-02T15:22:00.126
+Unexpected IOException with stream: 
+
+
+# Created on 2023-10-02T15:22:00.129
+Unexpected IOException with stream: P
+
+# Created on 2023-10-02T15:22:00.136
+Unexpected IOException with stream: l
+
+# Created on 2023-10-02T15:22:00.137
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.138
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:22:00.139
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.139
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.140
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.140
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.141
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.142
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.142
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.143
+Unexpected IOException with stream: h
+
+# Created on 2023-10-02T15:22:00.144
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:22:00.145
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:22:00.146
+Unexpected IOException with stream: p
+
+# Created on 2023-10-02T15:22:00.146
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.147
+Unexpected IOException with stream: :
+
+# Created on 2023-10-02T15:22:00.147
+Unexpected IOException with stream: /
+
+# Created on 2023-10-02T15:22:00.147
+Unexpected IOException with stream: /
+
+# Created on 2023-10-02T15:22:00.148
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:22:00.148
+Unexpected IOException with stream: h
+
+# Created on 2023-10-02T15:22:00.149
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.150
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.150
+Unexpected IOException with stream: m
+
+# Created on 2023-10-02T15:22:00.151
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.151
+Unexpected IOException with stream: d
+
+# Created on 2023-10-02T15:22:00.152
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.156
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.157
+Unexpected IOException with stream: v
+
+# Created on 2023-10-02T15:22:00.158
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.159
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.161
+Unexpected IOException with stream: .
+
+# Created on 2023-10-02T15:22:00.162
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:22:00.162
+Unexpected IOException with stream: h
+
+# Created on 2023-10-02T15:22:00.163
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.171
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.172
+Unexpected IOException with stream: m
+
+# Created on 2023-10-02T15:22:00.173
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.175
+Unexpected IOException with stream: u
+
+# Created on 2023-10-02T15:22:00.175
+Unexpected IOException with stream: m
+
+# Created on 2023-10-02T15:22:00.176
+Unexpected IOException with stream: .
+
+# Created on 2023-10-02T15:22:00.176
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.177
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.177
+Unexpected IOException with stream: g
+
+# Created on 2023-10-02T15:22:00.177
+Unexpected IOException with stream: /
+
+# Created on 2023-10-02T15:22:00.177
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.178
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.179
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:22:00.180
+Unexpected IOException with stream: u
+
+# Created on 2023-10-02T15:22:00.180
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.181
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.181
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:22:00.181
+Unexpected IOException with stream: y
+
+# Created on 2023-10-02T15:22:00.185
+Unexpected IOException with stream: -
+
+# Created on 2023-10-02T15:22:00.186
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:22:00.187
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.187
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:22:00.188
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.188
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.189
+Unexpected IOException with stream: d
+
+# Created on 2023-10-02T15:22:00.189
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.190
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.190
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:22:00.193
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:22:00.194
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.195
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.196
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:22:00.196
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.197
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.197
+Unexpected IOException with stream: f
+
+# Created on 2023-10-02T15:22:00.197
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.198
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.198
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.199
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.199
+Unexpected IOException with stream: u
+
+# Created on 2023-10-02T15:22:00.199
+Unexpected IOException with stream: g
+
+# Created on 2023-10-02T15:22:00.200
+Unexpected IOException with stream: g
+
+# Created on 2023-10-02T15:22:00.200
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.200
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.201
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:22:00.201
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.203
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.204
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:22:00.204
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.205
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.206
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.207
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:22:00.207
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.208
+Unexpected IOException with stream: k
+
+# Created on 2023-10-02T15:22:00.210
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.215
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.217
+Unexpected IOException with stream: p
+
+# Created on 2023-10-02T15:22:00.218
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.219
+Unexpected IOException with stream: n
+
+# Created on 2023-10-02T15:22:00.220
+Unexpected IOException with stream: g
+
+# Created on 2023-10-02T15:22:00.221
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.221
+Unexpected IOException with stream: C
+
+# Created on 2023-10-02T15:22:00.223
+Unexpected IOException with stream: h
+
+# Created on 2023-10-02T15:22:00.223
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.224
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.225
+Unexpected IOException with stream: m
+
+# Created on 2023-10-02T15:22:00.225
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.225
+Unexpected IOException with stream: D
+
+# Created on 2023-10-02T15:22:00.225
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.226
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.226
+Unexpected IOException with stream: v
+
+# Created on 2023-10-02T15:22:00.227
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.227
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.228
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.228
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.228
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:22:00.229
+Unexpected IOException with stream: f
+
+# Created on 2023-10-02T15:22:00.229
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.229
+Unexpected IOException with stream: .
+
+# Created on 2023-10-02T15:22:00.230
+Unexpected IOException with stream: 
+
+# Created on 2023-10-02T15:22:00.231
+Unexpected IOException with stream: 
+
+
+# Created on 2023-10-02T15:22:00.231
+Unexpected IOException with stream: C
+
+# Created on 2023-10-02T15:22:00.232
+Unexpected IOException with stream: h
+
+# Created on 2023-10-02T15:22:00.234
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.235
+Unexpected IOException with stream: o
+
+# Created on 2023-10-02T15:22:00.235
+Unexpected IOException with stream: m
+
+# Created on 2023-10-02T15:22:00.235
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.236
+Unexpected IOException with stream: D
+
+# Created on 2023-10-02T15:22:00.236
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.236
+Unexpected IOException with stream: i
+
+# Created on 2023-10-02T15:22:00.236
+Unexpected IOException with stream: v
+
+# Created on 2023-10-02T15:22:00.237
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.237
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.237
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.238
+Unexpected IOException with stream: w
+
+# Created on 2023-10-02T15:22:00.238
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:22:00.238
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.238
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.238
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.239
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:22:00.239
+Unexpected IOException with stream: a
+
+# Created on 2023-10-02T15:22:00.239
+Unexpected IOException with stream: r
+
+# Created on 2023-10-02T15:22:00.239
+Unexpected IOException with stream: t
+
+# Created on 2023-10-02T15:22:00.239
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.240
+Unexpected IOException with stream: d
+
+# Created on 2023-10-02T15:22:00.240
+Unexpected IOException with stream:  
+
+# Created on 2023-10-02T15:22:00.240
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.240
+Unexpected IOException with stream: u
+
+# Created on 2023-10-02T15:22:00.240
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:22:00.241
+Unexpected IOException with stream: c
+
+# Created on 2023-10-02T15:22:00.241
+Unexpected IOException with stream: e
+
+# Created on 2023-10-02T15:22:00.241
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.241
+Unexpected IOException with stream: s
+
+# Created on 2023-10-02T15:22:00.241
+Unexpected IOException with stream: f
+
+# Created on 2023-10-02T15:22:00.242
+Unexpected IOException with stream: u
+
+# Created on 2023-10-02T15:22:00.242
+Unexpected IOException with stream: l
+
+# Created on 2023-10-02T15:22:00.242
+Unexpected IOException with stream: l
+
+# Created on 2023-10-02T15:22:00.242
+Unexpected IOException with stream: y
+
+# Created on 2023-10-02T15:22:00.243
+Unexpected IOException with stream: .
+
+# Created on 2023-10-02T15:22:00.243
+Unexpected IOException with stream: 
+
+# Created on 2023-10-02T15:22:00.243
+Unexpected IOException with stream: 
+
+
+# Created on 2023-10-02T15:22:01.440
+Unexpected IOException with stream: окт. 02, 2023 3:22:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 113
+
+
+# Created on 2023-10-02T15:22:01.854
+Unexpected IOException: 5,1,tests.Autorisation.AutorisationTest,checkRedirectAfterAutorisation(tests.Autorisation.AutorisationTest),autorisation,null,null
+
+
+# Created on 2023-10-02T15:22:04.131
+Unexpected IOException: 6,1,tests.Autorisation.AutorisationTest,checkRedirectAfterAutorisation(tests.Autorisation.AutorisationTest),null,null,null
+
+
+# Created on 2023-10-02T15:22:04.139
+Unexpected IOException: 5,1,tests.Casino.CasinoTest,GeneralQuestions(tests.Casino.CasinoTest),casino,null,null
+
+
+# Created on 2023-10-02T15:22:04.157
+Unexpected IOException: 6,1,tests.Casino.CasinoTest,GeneralQuestions(tests.Casino.CasinoTest),null,null,null
+
+
+# Created on 2023-10-02T15:22:04.158
+Unexpected IOException: 5,1,tests.PageAsteroid.LoginAndTrytoPlayAsteroidTest,checkButtonPlayAsteroid(tests.PageAsteroid.LoginAndTrytoPlayAsteroidTest),asteroid,null,null
+
+
+# Created on 2023-10-02T15:22:14.439
+Unexpected IOException: 6,1,tests.PageAsteroid.LoginAndTrytoPlayAsteroidTest,checkButtonPlayAsteroid(tests.PageAsteroid.LoginAndTrytoPlayAsteroidTest),null,null,null
+
+
+# Created on 2023-10-02T15:22:14.441
+Unexpected IOException: 5,1,tests.PageAsteroid.PageAsteroidTest,checkIsRedirectingToPageAsteroid(tests.PageAsteroid.PageAsteroidTest),asteroid,null,null
+
+
